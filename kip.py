@@ -13,7 +13,11 @@ client = commands.Bot(command_prefix='!', activity=discord.Game(name="Scrabble")
 @client.command()
 async def ping(ctx):
   await ctx.channel.send("pong")
-    
+
+@client.command()
+async def summon(ctx):
+    await ctx.channel.send("You rang?") 
+
 client.run(token)
 
     
